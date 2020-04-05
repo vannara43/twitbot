@@ -29,5 +29,5 @@ const start = async () => {
   });
   manager.spawn('auto', Number(process.env.SHARD_SPAWN_DELAY || 15000), Number(process.env.SHARD_SPAWN_TIMEOUT || 60000));
 };
-
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 start();
